@@ -14,7 +14,7 @@ import argparse
 import platform
 #from struct import pack, unpack
 
-import d3des as d
+from d3des import d3des as d  #fix AttributeError: 'module' object has no attribute 'vnckey' at line 25
 if platform.system().startswith('Windows'): import WindowsRegistry as wreg 
 
 def split_len(seq, length):
